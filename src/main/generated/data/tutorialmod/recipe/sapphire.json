@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "E": {
+      "item": "minecraft:emerald"
+    }
+  },
+  "pattern": [
+    "DDD",
+    "DED",
+    "DDD"
+  ],
+  "result": {
+    "count": 1,
+    "id": "tutorialmod:sapphire"
+  }
+}

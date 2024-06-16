@@ -8,6 +8,7 @@ import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.util.Identifier;
+import net.threexj.tutorialmod.item.ModItems;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -26,5 +27,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('#', Items.DIRT)
                 .criterion(hasItem(Items.STONE), conditionsFromItem(Items.STONE))
                 .offerTo(exporter, Identifier.tryParse(getRecipeName(Items.STONE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SAPPHIRE, 1)
+                .pattern("DDD")
+                .pattern("DED")
+                .pattern("DDD")
+                .input('D', Items.DIAMOND)
+                .input('E', Items.EMERALD)
+                .criterion(hasItem(Items.DIAMOND), conditionsFromItem(Items.DIAMOND))
+                .criterion(hasItem(Items.EMERALD), conditionsFromItem(Items.EMERALD))
+                .offerTo(exporter, Identifier.tryParse(getRecipeName(ModItems.SAPPHIRE)));
     }
 }
