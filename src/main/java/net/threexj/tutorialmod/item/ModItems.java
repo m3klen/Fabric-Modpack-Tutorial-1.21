@@ -17,6 +17,7 @@ public class ModItems {
     public static final Item PINEAPPLE = registerItem("pineapple", new Item(new Item.Settings().food(ModFoodComponents.PINEAPPLE)));
 
 
+    public static final Item LEGO_COAL = registerItem("lego_coal", new Item(new Item.Settings()));
 
     private static void addItemsToFirstItemGroup(FabricItemGroupEntries entries) {
         entries.add(Items.STONE);

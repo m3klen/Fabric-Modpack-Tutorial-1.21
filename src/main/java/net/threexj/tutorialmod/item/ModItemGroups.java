@@ -21,6 +21,7 @@ public class ModItemGroups {
                         entries.add(ModItems.SAPPHIRE);
                         entries.add(ModBlocks.SAPPHIRE_BLOCK);
                         entries.add(ModItems.PINEAPPLE);
+                        entries.add(ModItems.LEGO_COAL);
                     })
                     .build());
 

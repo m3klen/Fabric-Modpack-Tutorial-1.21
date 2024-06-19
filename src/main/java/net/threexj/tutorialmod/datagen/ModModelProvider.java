@@ -22,5 +22,6 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.SAPPHIRE, Models.GENERATED);
         itemModelGenerator.register(ModItems.PINEAPPLE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.LEGO_COAL, Models.GENERATED);
     }
 }

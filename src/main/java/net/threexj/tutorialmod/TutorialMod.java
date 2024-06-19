@@ -2,6 +2,7 @@ package net.threexj.tutorialmod;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.threexj.tutorialmod.blocks.ModBlocks;
 import net.threexj.tutorialmod.item.ModItemGroups;
 import net.threexj.tutorialmod.item.ModItems;
@@ -18,5 +19,7 @@ public class TutorialMod implements ModInitializer {
 		ModItemGroups.registerItemGroups();
 
 		ModBlocks.registerModBlocks();
+
+		FuelRegistry.INSTANCE.add(ModItems.LEGO_COAL, 200);
 	}
 }
