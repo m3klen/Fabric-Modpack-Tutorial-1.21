@@ -14,6 +14,10 @@ public class ModItems {
 
     public static final Item SAPPHIRE = registerItem("sapphire", new Item(new Item.Settings()));
 
+    public static final Item PINEAPPLE = registerItem("pineapple", new Item(new Item.Settings().food(ModFoodComponents.PINEAPPLE)));
+
+
+
     private static void addItemsToFirstItemGroup(FabricItemGroupEntries entries) {
         entries.add(Items.STONE);
     }

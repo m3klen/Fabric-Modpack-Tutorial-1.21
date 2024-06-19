@@ -46,5 +46,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('S', ModItems.SAPPHIRE)
                 .criterion(hasItem(ModItems.SAPPHIRE), conditionsFromItem(ModItems.SAPPHIRE))
                 .offerTo(exporter, Identifier.tryParse(getRecipeName(ModBlocks.SAPPHIRE_BLOCK)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.FOOD, ModItems.PINEAPPLE, 1)
+                .pattern(" S ")
+                .pattern("S#S")
+                .pattern("SSS")
+                .input('S', Items.GOLD_INGOT)
+                .input('#', Items.APPLE)
+                .criterion(hasItem(Items.APPLE), conditionsFromItem(Items.APPLE))
+                .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(exporter, Identifier.tryParse(getRecipeName(ModItems.PINEAPPLE)));
     }
 }
