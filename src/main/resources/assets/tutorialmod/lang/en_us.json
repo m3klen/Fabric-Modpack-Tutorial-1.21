@@ -1,4 +1,6 @@
 {
   "itemgroup.tutorialmod": "Tutorialmod Group",
-  "item.tutorialmod.sapphire": "Sapphire"
+  "item.tutorialmod.sapphire": "Sapphire",
+
+  "block.tutorialmod.sapphire_block": "Sapphire Block"
 }

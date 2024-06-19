@@ -9,6 +9,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.threexj.tutorialmod.TutorialMod;
+import net.threexj.tutorialmod.blocks.ModBlocks;
 
 public class ModItemGroups {
     public static final ItemGroup TUTORIALMOD_ITEMGROUP = Registry.register(Registries.ITEM_GROUP,
@@ -18,6 +19,7 @@ public class ModItemGroups {
                     .icon(() -> new ItemStack(Items.WOODEN_HOE))
                     .entries((displayContext, entries) -> {
                         entries.add(ModItems.SAPPHIRE);
+                        entries.add(ModBlocks.SAPPHIRE_BLOCK);
                     })
                     .build());
 
