@@ -22,6 +22,13 @@ public class ModItemGroups {
                         entries.add(ModBlocks.STEEL_BLOCK);
                         entries.add(ModItems.PINEAPPLE);
                         entries.add(ModItems.LEGO_COAL);
+
+                        entries.add(ModItems.STEEL_SWORD);
+                        entries.add(ModItems.STEEL_AXE);
+                        entries.add(ModItems.STEEL_HOE);
+                        entries.add(ModItems.STEEL_PICKAXE);
+                        entries.add(ModItems.STEEL_SHOVEL);
+
                     })
                     .build());
 

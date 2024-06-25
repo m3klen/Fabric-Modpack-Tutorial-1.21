@@ -54,5 +54,55 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.APPLE), conditionsFromItem(Items.APPLE))
                 .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
                 .offerTo(exporter, Identifier.tryParse(getRecipeName(ModItems.PINEAPPLE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.STEEL_SWORD, 1)
+                .pattern(" S ")
+                .pattern(" S ")
+                .pattern(" I ")
+                .input('S', ModItems.STEEL_INGOT)
+                .input('I', Items.IRON_INGOT)
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .criterion(hasItem(ModItems.STEEL_INGOT), conditionsFromItem(ModItems.STEEL_INGOT))
+                .offerTo(exporter, Identifier.tryParse(getRecipeName(ModItems.STEEL_SWORD)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.STEEL_AXE, 1)
+                .pattern("SS ")
+                .pattern("SI ")
+                .pattern(" I ")
+                .input('S', ModItems.STEEL_INGOT)
+                .input('I', Items.IRON_INGOT)
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .criterion(hasItem(ModItems.STEEL_INGOT), conditionsFromItem(ModItems.STEEL_INGOT))
+                .offerTo(exporter, Identifier.tryParse(getRecipeName(ModItems.STEEL_AXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.STEEL_PICKAXE, 1)
+                .pattern("SSS")
+                .pattern(" I ")
+                .pattern(" I ")
+                .input('S', ModItems.STEEL_INGOT)
+                .input('I', Items.IRON_INGOT)
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .criterion(hasItem(ModItems.STEEL_INGOT), conditionsFromItem(ModItems.STEEL_INGOT))
+                .offerTo(exporter, Identifier.tryParse(getRecipeName(ModItems.STEEL_PICKAXE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.STEEL_SHOVEL, 1)
+                .pattern(" S ")
+                .pattern(" I ")
+                .pattern(" I ")
+                .input('S', ModItems.STEEL_INGOT)
+                .input('I', Items.IRON_INGOT)
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .criterion(hasItem(ModItems.STEEL_INGOT), conditionsFromItem(ModItems.STEEL_INGOT))
+                .offerTo(exporter, Identifier.tryParse(getRecipeName(ModItems.STEEL_SHOVEL)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.STEEL_HOE, 1)
+                .pattern("SS ")
+                .pattern(" I ")
+                .pattern(" I ")
+                .input('S', ModItems.STEEL_INGOT)
+                .input('I', Items.IRON_INGOT)
+                .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
+                .criterion(hasItem(ModItems.STEEL_INGOT), conditionsFromItem(ModItems.STEEL_INGOT))
+                .offerTo(exporter, Identifier.tryParse(getRecipeName(ModItems.STEEL_HOE)));
     }
 }

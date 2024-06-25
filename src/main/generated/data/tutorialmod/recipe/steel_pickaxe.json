@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "S": {
+      "item": "tutorialmod:steel_ingot"
+    }
+  },
+  "pattern": [
+    "SSS",
+    " I ",
+    " I "
+  ],
+  "result": {
+    "count": 1,
+    "id": "tutorialmod:steel_pickaxe"
+  }
+}
