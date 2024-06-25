@@ -17,6 +17,7 @@ import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
+import net.threexj.tutorialmod.blocks.ModBlocks;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -27,7 +28,9 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
+
         addDrop(Blocks.DIAMOND_BLOCK, OreDrops(Blocks.DIAMOND_BLOCK, Items.DIAMOND));
+        addDrop(ModBlocks.STEEL_BLOCK);
     }
 
     public LootTable.Builder OreDrops(Block drop, Item item) {

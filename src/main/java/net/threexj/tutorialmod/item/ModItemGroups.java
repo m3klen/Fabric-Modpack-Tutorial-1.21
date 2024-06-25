@@ -18,8 +18,8 @@ public class ModItemGroups {
                     .displayName(Text.translatable("itemgroup.tutorialmod"))
                     .icon(() -> new ItemStack(Items.WOODEN_HOE))
                     .entries((displayContext, entries) -> {
-                        entries.add(ModItems.SAPPHIRE);
-                        entries.add(ModBlocks.SAPPHIRE_BLOCK);
+                        entries.add(ModItems.STEEL_INGOT);
+                        entries.add(ModBlocks.STEEL_BLOCK);
                         entries.add(ModItems.PINEAPPLE);
                         entries.add(ModItems.LEGO_COAL);
                     })

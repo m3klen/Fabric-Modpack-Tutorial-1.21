@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 public class ModRecipeProvider extends FabricRecipeProvider {
-    public static final List<ItemConvertible> OUR_SMELTABLES = List.of(ModItems.SAPPHIRE, ModBlocks.SAPPHIRE_BLOCK);
+    public static final List<ItemConvertible> OUR_SMELTABLES = List.of(ModItems.STEEL_INGOT, ModBlocks.STEEL_BLOCK);
 
     public ModRecipeProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(output, registriesFuture);
@@ -32,8 +32,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         offerBlasting(exporter, OUR_SMELTABLES, RecipeCategory.MISC, ModItems.PINEAPPLE,
                 0.7f, 100, "sapphire");
 
-        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.SAPPHIRE, RecipeCategory.DECORATIONS,
-                ModBlocks.SAPPHIRE_BLOCK);
+        offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.STEEL_INGOT, RecipeCategory.DECORATIONS,
+                ModBlocks.STEEL_BLOCK);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, Items.DIAMOND, 1)
                 .pattern("SSS")

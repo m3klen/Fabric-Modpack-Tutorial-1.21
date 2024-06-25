@@ -10,14 +10,12 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.threexj.tutorialmod.TutorialMod;
+import net.threexj.tutorialmod.sound.ModSounds;
 
 public class ModBlocks {
 
-    public static final Block SAPPHIRE_BLOCK = registerBlock("sapphire_block",
-            new Block(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK)));
-
-    public static final Block SAPPHIRE_BLOCK2 = registerBlock("sapphire_block2",
-            new Block(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+    public static final Block STEEL_BLOCK = registerBlock("steel_block",
+            new Block(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).sounds(ModSounds.STEEL_BLOCK_SOUNDS)));
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

@@ -1,0 +1,32 @@
+{
+  "sapphire_block_break": {
+    "subtitle": "sounds.tutorialmod.sapphire_block_break",
+    "sounds": [
+      "tutorialmod:sapphire_block_break"
+    ]
+  },
+  "sapphire_block_fall": {
+    "subtitle": "sounds.tutorialmod.sapphire_block_fall",
+    "sounds": [
+      "tutorialmod:sapphire_block_fall"
+    ]
+  },
+  "sapphire_block_hit": {
+    "subtitle": "sounds.tutorialmod.sapphire_block_hit",
+    "sounds": [
+      "tutorialmod:sapphire_block_hit"
+    ]
+  },
+  "sapphire_block_place": {
+    "subtitle": "sounds.tutorialmod.sapphire_block_place",
+    "sounds": [
+      "tutorialmod:sapphire_block_place"
+    ]
+  },
+  "sapphire_block_step": {
+    "subtitle": "sounds.tutorialmod.sapphire_block_step",
+    "sounds": [
+      "tutorialmod:sapphire_block_step"
+    ]
+  }
+}

@@ -1,10 +1,13 @@
 {
   "itemgroup.tutorialmod": "Tutorialmod Group",
-  "item.tutorialmod.sapphire": "Sapphire",
+
+  "item.tutorialmod.steel_ingot": "Steel Ingot",
 
   "item.tutorialmod.pineapple": "Pineapple",
 
   "item.tutorialmod.lego_coal": "Lego Coal",
 
-  "block.tutorialmod.sapphire_block": "Sapphire Block"
+  "block.tutorialmod.steel_block": "Steel Block",
+
+  "sounds.tutorialmod.sapphire_block_break": "Block broken"
 }
