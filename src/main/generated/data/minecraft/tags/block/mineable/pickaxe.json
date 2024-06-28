@@ -1,5 +1,7 @@
 {
   "values": [
-    "tutorialmod:steel_block"
+    "tutorialmod:steel_block",
+    "tutorialmod:purple_enchanting_table",
+    "tutorialmod:colored_block"
   ]
 }

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "W": {
+      "item": "minecraft:oak_planks"
+    }
+  },
+  "pattern": [
+    " W ",
+    " W ",
+    " G "
+  ],
+  "result": {
+    "count": 1,
+    "id": "tutorialmod:bacchetta"
+  }
+}
