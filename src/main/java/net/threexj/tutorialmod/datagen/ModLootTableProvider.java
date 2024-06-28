@@ -31,6 +31,8 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
         addDrop(Blocks.DIAMOND_BLOCK, OreDrops(Blocks.DIAMOND_BLOCK, Items.DIAMOND));
         addDrop(ModBlocks.STEEL_BLOCK);
+        addDrop(ModBlocks.PURPLE_ENCHANTING_TABLE);
+        addDrop(ModBlocks.COLORED_BLOCK);
     }
 
     public LootTable.Builder OreDrops(Block drop, Item item) {

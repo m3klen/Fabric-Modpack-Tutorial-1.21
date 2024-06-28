@@ -17,6 +17,12 @@ public class ModBlocks {
     public static final Block STEEL_BLOCK = registerBlock("steel_block",
             new Block(AbstractBlock.Settings.copy(Blocks.IRON_BLOCK).sounds(ModSounds.STEEL_BLOCK_SOUNDS)));
 
+    public static final Block PURPLE_ENCHANTING_TABLE = registerBlock("purple_enchanting_table",
+            new Block(AbstractBlock.Settings.copy(Blocks.ENCHANTING_TABLE)));
+
+    public static final Block COLORED_BLOCK = registerBlock("colored_block",
+            new Block(AbstractBlock.Settings.copy(Blocks.STONE)));
+
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, Identifier.tryParse(TutorialMod.MOD_ID + ":" + name), block);

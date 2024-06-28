@@ -16,6 +16,8 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.STEEL_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.PURPLE_ENCHANTING_TABLE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.COLORED_BLOCK);
     }
 
     @Override
@@ -30,5 +32,7 @@ public class ModModelProvider extends FabricModelProvider {
 
         itemModelGenerator.register(ModItems.PINEAPPLE, Models.GENERATED);
         itemModelGenerator.register(ModItems.LEGO_COAL, Models.GENERATED);
+
+        itemModelGenerator.register(ModItems.BACCHETTA, Models.GENERATED);
     }
 }

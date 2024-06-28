@@ -104,5 +104,15 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.IRON_INGOT), conditionsFromItem(Items.IRON_INGOT))
                 .criterion(hasItem(ModItems.STEEL_INGOT), conditionsFromItem(ModItems.STEEL_INGOT))
                 .offerTo(exporter, Identifier.tryParse(getRecipeName(ModItems.STEEL_HOE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BACCHETTA, 1)
+                .pattern(" W ")
+                .pattern(" W ")
+                .pattern(" G ")
+                .input('W', Items.OAK_PLANKS)
+                .input('G', Items.GOLD_INGOT)
+                .criterion(hasItem(Items.OAK_PLANKS), conditionsFromItem(Items.OAK_PLANKS))
+                .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
+                .offerTo(exporter, Identifier.tryParse(getRecipeName(ModItems.BACCHETTA)));
     }
 }

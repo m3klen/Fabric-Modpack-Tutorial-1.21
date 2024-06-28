@@ -22,6 +22,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(Blocks.DIAMOND_BLOCK);
 
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-                .add(ModBlocks.STEEL_BLOCK);
+                .add(ModBlocks.STEEL_BLOCK)
+                .add(ModBlocks.PURPLE_ENCHANTING_TABLE)
+                .add(ModBlocks.COLORED_BLOCK);
     }
 }

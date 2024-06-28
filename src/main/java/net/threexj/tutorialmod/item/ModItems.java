@@ -16,6 +16,9 @@ public class ModItems {
 
     public static final Item PINEAPPLE = registerItem("pineapple", new Item(new Item.Settings().food(ModFoodComponents.PINEAPPLE)));
 
+
+    public static final Item BACCHETTA = registerItem("bacchetta", new Item(new Item.Settings()));
+
     public static final Item LEGO_COAL = registerItem("lego_coal", new Item(new Item.Settings()));
 
 

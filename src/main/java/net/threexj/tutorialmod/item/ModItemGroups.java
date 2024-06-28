@@ -1,6 +1,7 @@
 package net.threexj.tutorialmod.item;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.minecraft.block.Blocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -28,6 +29,9 @@ public class ModItemGroups {
                         entries.add(ModItems.STEEL_HOE);
                         entries.add(ModItems.STEEL_PICKAXE);
                         entries.add(ModItems.STEEL_SHOVEL);
+
+                        entries.add(ModBlocks.PURPLE_ENCHANTING_TABLE);
+                        entries.add(ModBlocks.COLORED_BLOCK);
 
                     })
                     .build());
