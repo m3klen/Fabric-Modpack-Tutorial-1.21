@@ -105,14 +105,36 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.STEEL_INGOT), conditionsFromItem(ModItems.STEEL_INGOT))
                 .offerTo(exporter, Identifier.tryParse(getRecipeName(ModItems.STEEL_HOE)));
 
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.BACCHETTA, 1)
-                .pattern(" W ")
-                .pattern(" W ")
-                .pattern(" G ")
-                .input('W', Items.OAK_PLANKS)
-                .input('G', Items.GOLD_INGOT)
-                .criterion(hasItem(Items.OAK_PLANKS), conditionsFromItem(Items.OAK_PLANKS))
-                .criterion(hasItem(Items.GOLD_INGOT), conditionsFromItem(Items.GOLD_INGOT))
-                .offerTo(exporter, Identifier.tryParse(getRecipeName(ModItems.BACCHETTA)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STEEL_HELMET, 1)
+                .pattern("WWW")
+                .pattern("W W")
+                .pattern("   ")
+                .input('W',  ModItems.STEEL_INGOT)
+                .criterion(hasItem(ModItems.STEEL_INGOT), conditionsFromItem(ModItems.STEEL_INGOT))
+                .offerTo(exporter, Identifier.tryParse(getRecipeName(ModItems.STEEL_HELMET)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STEEL_CHESTPLATE, 1)
+                .pattern("W W")
+                .pattern("WWW")
+                .pattern("WWW")
+                .input('W',  ModItems.STEEL_INGOT)
+                .criterion(hasItem(ModItems.STEEL_INGOT), conditionsFromItem(ModItems.STEEL_INGOT))
+                .offerTo(exporter, Identifier.tryParse(getRecipeName(ModItems.STEEL_CHESTPLATE)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STEEL_LEGGINGS, 1)
+                .pattern("WWW")
+                .pattern("W W")
+                .pattern("W W")
+                .input('W',  ModItems.STEEL_INGOT)
+                .criterion(hasItem(ModItems.STEEL_INGOT), conditionsFromItem(ModItems.STEEL_INGOT))
+                .offerTo(exporter, Identifier.tryParse(getRecipeName(ModItems.STEEL_LEGGINGS)));
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STEEL_BOOTS, 1)
+                .pattern("   ")
+                .pattern("W W")
+                .pattern("W W")
+                .input('W',  ModItems.STEEL_INGOT)
+                .criterion(hasItem(ModItems.STEEL_INGOT), conditionsFromItem(ModItems.STEEL_INGOT))
+                .offerTo(exporter, Identifier.tryParse(getRecipeName(ModItems.STEEL_BOOTS)));
     }
 }

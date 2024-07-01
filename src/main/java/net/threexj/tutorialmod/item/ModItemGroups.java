@@ -30,6 +30,13 @@ public class ModItemGroups {
                         entries.add(ModItems.STEEL_PICKAXE);
                         entries.add(ModItems.STEEL_SHOVEL);
 
+                        entries.add(ModItems.STEEL_HELMET);
+                        entries.add(ModItems.STEEL_CHESTPLATE);
+                        entries.add(ModItems.STEEL_LEGGINGS);
+                        entries.add(ModItems.STEEL_BOOTS);
+
+                        entries.add(Items.IRON_HELMET);
+
                         entries.add(ModBlocks.PURPLE_ENCHANTING_TABLE);
                         entries.add(ModBlocks.COLORED_BLOCK);
 

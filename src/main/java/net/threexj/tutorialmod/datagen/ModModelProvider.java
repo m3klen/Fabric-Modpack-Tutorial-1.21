@@ -33,6 +33,9 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.PINEAPPLE, Models.GENERATED);
         itemModelGenerator.register(ModItems.LEGO_COAL, Models.GENERATED);
 
-        itemModelGenerator.register(ModItems.BACCHETTA, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STEEL_HELMET, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STEEL_CHESTPLATE, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STEEL_LEGGINGS, Models.GENERATED);
+        itemModelGenerator.register(ModItems.STEEL_BOOTS, Models.GENERATED);
     }
 }

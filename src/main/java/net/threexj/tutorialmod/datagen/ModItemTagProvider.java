@@ -30,5 +30,18 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(ItemTags.SHOVELS)
                 .add(ModItems.STEEL_SHOVEL);
+
+        getOrCreateTagBuilder(ItemTags.HEAD_ARMOR)
+                .add(ModItems.STEEL_HELMET);
+
+        getOrCreateTagBuilder(ItemTags.CHEST_ARMOR)
+                .add(ModItems.STEEL_CHESTPLATE);
+
+        getOrCreateTagBuilder(ItemTags.LEG_ARMOR)
+                .add(ModItems.STEEL_LEGGINGS);
+
+        getOrCreateTagBuilder(ItemTags.FOOT_ARMOR)
+                .add(ModItems.STEEL_BOOTS);
+
     }
 }
